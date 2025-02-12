@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "gimmicks_unleashed",
+	"version": "${version}",
+	"name": "Gimmicks Unleashed",
+	"description": "Server Side Gimmicks for Cobblemon",
+	"authors": [
+		"1mamute"
+	],
+	"contact": {
+		"homepage": "https://loja.jornadascobblemon.com.br/",
+		"sources": "https://github.com/jornadascobblemon/gimmicks-unleashed"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/gimmicks_unleashed/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"server": [
+			{
+				"adapter": "kotlin",
+				"value": "com.jornadascobblemon.gimmicks_unleashed.GimmicksUnleashed"
+			}
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.12.3+kotlin.2.0.21",
+        "cobblemon": ">=1.6.1"
+	},
+    "suggests": {
+        "luckperms": "*"
+    }
+}
